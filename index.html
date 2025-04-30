@@ -29,33 +29,52 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p class="apple">More about this memory.</p>
+        <img id="one" src="https://www.presslabel.com/mm5/graphics/00000001/370-l.gif">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p class="draw">More about this memory.</p>
+        <img style="display:none" id="two" src="https://www.presslabel.com/mm5/graphics/00000001/370-l.gif">
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p class="hallo">More about this memory</p>
+        <img id="three" src="https://www.presslabel.com/mm5/graphics/00000001/370-l.gif">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "red");
+        $("#mem1").text("Coding my apple")
+        $(".apple").text("I coded a smirking apple using javascript and was really satisfied with the result.")
+        $("#one").attr(
+          "src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg39x3gMf0FMbNCjR45IQB8t9F4w3o2csCAK_OZ6QhAA&s&ec=72940543"
+          );
       });
 
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#mem2").text("Playing drawasaurus")
+        $(".draw").text("There were some really funny moments playing drawasaurus this year.")
+         $("#two").attr(
+          "src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3zID4EryyW9MTt0i-yfhapZWRWg4MwVvime69ZjVTVA&s&ec=72940543"
+          );
+        $("#two").show(2000)
       });
 
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
+      $("#mem3-button").click(function (){
+        $("#mem3").css("color", "orange");
+        $("#mem3").text("Halloween")
+        $(".hallo").text("It was fun when Ms. Hall gave out candy and everyone was dressed up.")
+         $("#three").attr(
+          "src", "https://corporate.hallmark.com/wp-content/uploads/2017/09/HolidayOccassion-Halloween.jpg"
+          );
+        });
     </script>
   </body>
 </html>
